@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDB", "TestDB\TestDB.csproj", "{BCCA22D1-5877-46D4-B5E9-09F1B7A1E47D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{5D6113C6-FCC0-467C-A4FA-C6865379109F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{CAA64DD8-A522-4765-B94E-A590B170FA59}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{B635B612-EAB4-4CD3-B6D0-B1EA13555B7B}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\TestDB.json = PublishScripts\Templates\TestDB.json
+		PublishScripts\Templates\TestDB.param.dev.json = PublishScripts\Templates\TestDB.param.dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCCA22D1-5877-46D4-B5E9-09F1B7A1E47D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCCA22D1-5877-46D4-B5E9-09F1B7A1E47D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCCA22D1-5877-46D4-B5E9-09F1B7A1E47D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCCA22D1-5877-46D4-B5E9-09F1B7A1E47D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CAA64DD8-A522-4765-B94E-A590B170FA59} = {5D6113C6-FCC0-467C-A4FA-C6865379109F}
+		{B635B612-EAB4-4CD3-B6D0-B1EA13555B7B} = {5D6113C6-FCC0-467C-A4FA-C6865379109F}
+	EndGlobalSection
+EndGlobal
